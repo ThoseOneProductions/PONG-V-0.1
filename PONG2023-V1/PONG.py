@@ -2,6 +2,7 @@ import pygame
 import sys
 import random
 
+
 # Game constants
 WIDTH, HEIGHT = 800, 600
 BALL_RADIUS = 10
@@ -21,20 +22,20 @@ pygame.mixer.init()  # Added for sound
 font = pygame.font.Font(None, 72)
 
 # Load sounds
-paddle_hit_sound = pygame.mixer.Sound(r'hit.wav')
+paddle_hit_sound = pygame.mixer.Sound(r'PONG2023-V1/hit.wav')
 
 # Load background music and play it
-pygame.mixer.music.load(r'goodlife.mp3')
+pygame.mixer.music.load(r'PONG2023-V1/goodlife.mp3')
 pygame.mixer.music.play(-1)  # -1 makes it loop forever
 
 # Load score sound effect
-score_sound = pygame.mixer.Sound(r'oof_2.wav')
+score_sound = pygame.mixer.Sound(r'PONG2023-V1/oof_2.wav')
 
 
 
 
 # Load ball image
-brother_face = pygame.image.load(r'Mistiko_Ball_1.png')
+brother_face = pygame.image.load(r'PONG2023-V1/Mistiko_Ball_1.png')
 brother_face = pygame.transform.scale(brother_face, (BALL_RADIUS * 4, BALL_RADIUS * 4))
 
 # Game objects
