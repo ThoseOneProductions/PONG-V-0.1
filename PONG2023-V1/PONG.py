@@ -5,7 +5,7 @@ import random
 
 # Game constants
 WIDTH, HEIGHT = 800, 600
-BALL_RADIUS = 10
+BALL_RADIUS = 11
 PADDLE_WIDTH, PADDLE_HEIGHT = 15, 80
 FPS = 60
 
